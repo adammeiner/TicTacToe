@@ -10,7 +10,6 @@ const passwordInput = document.getElementById("passwordInput");
 
 const CELL_SIZE = 200;
 
-// Automatically toggle between ws:// (local) and wss:// (Render HTTPS)
 const protocol = window.location.protocol === "https:" ? "wss:" : "ws:";
 const ws = new WebSocket(`${protocol}//${window.location.host}`); // WEBSOCKET CONNECTION
 
